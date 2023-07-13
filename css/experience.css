@@ -1,0 +1,142 @@
+.experience__title {
+    color: #FF859B;
+
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+
+    margin-top: 4.8rem;
+    text-align: center;
+    text-shadow: 0 3px 3px rgba(0, 0, 0.75);
+    text-transform: uppercase;
+}
+
+.experience__img {
+    box-shadow: 8px 8px 4px rgba(8, 7, 7, 0.669);
+    height: 18rem;
+
+    margin-top: 1.6rem;
+
+    width: 100%;
+}
+
+.experience__container {
+    display: block;
+}
+
+.experience__subtitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+
+    margin: 1.6rem 3.2rem 0.8rem;
+    text-align: left;
+    text-shadow: 0 3px 3px rgba(0, 0, 0.75);
+    text-transform: uppercase;
+}
+
+.experience__description {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+
+    margin: 0.8rem 3.2rem 0.8rem;
+    text-align: left;
+    text-shadow: 0 2px 3px rgba(0, 0, 0.75);
+}
+
+.experience__subtitle:hover, .experience__description:hover {
+    color: #ff1867;
+    font-weight: bold;
+    text-shadow: 0 3px 3px rgba(0, 0, 0.75);
+}
+
+.experience__buttons {
+    display: flex;
+
+    gap: 1.6rem;
+    height: 4rem;
+    margin: 1.5rem 0 2rem 3.2rem;
+
+    width: 21rem;
+}
+
+.button__links {
+    justify-content: center;
+    align-items: center;
+}
+
+.button__repository, .button__demo {
+    background-color: transparent;
+    border: 2px double #FF859B;
+    border-radius: 0.5rem;
+    box-shadow: 4px 6px 9px rgba(217, 59, 151, 0.4);
+    color: #f0eaeb;
+    cursor: pointer;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    height: 4rem;
+    text-shadow: 0 5px 5px rgba(0, 0, 0.75);
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.button__repository:hover, .button__demo:hover {
+    background-color: #ff1867;
+    border: 1px solid rgba(255, 255, 255, 0.589);
+    box-shadow: 4px 6px 9px rgba(20, 18, 20, 0.4);
+    transform: scale(1.1);
+    transition: .2s linear;
+    text-shadow: 0 4px 6px rgba(0, 0, 0.75);
+}
+
+@media (min-width: 768px) {
+    .experience__img {
+        border-radius: 0.2rem;
+        margin: 3.2rem 3.2rem 0 3.2rem;
+        width: 69rem;
+    }
+
+    .experience__subtitle {
+        margin-left: 5rem;
+    }
+
+    .experience__description {
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .experience__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experience__img {
+        border-radius: 0.5rem;
+        height: 40.6rem;
+        width: 70rem;
+    }
+
+    .experience__wrapper {
+        display: block;
+    }
+
+    .experience__container:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+    .experience__subtitle {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+
+    .experience__subtitle,
+    .experience__description,
+    .experience__buttons {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+}
